@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
+    <style>
+       
+        footer {
+      background: #000000;
+      color: rgb(255, 251, 251);
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -48,30 +58,42 @@
     <h3>send me a message </h3>
     <!-- text input for name  -->
 
-     <label for="Name">your name </label>
+     <label for="fname">first name </label>
      <br>
-     <input type="text" name="your name " id="Name" placeholder="E.g. Rahul P">
+     <input type="text" name="your name " id="Name" placeholder="E.g. sujith">
+     <br><br>
+     <label for="last name">last Name</label>
+     <br> 
+     <input type="text" name="last name" id="last name" placeholder="E.g Raj p ">
      <br><br>
      <!-- text input for mail -->
 
      <label for="Email">Email</label>
      <br>
-     <input type="email" name="email" id="">
+     <input type="email" name="email" id="email"required
+     placeholder="Enter your emali" >
      <br><br>
 
      <!-- subject field -->
 
       <label for="subject">subject</label>
       <br>
-      <input type="text" name="subject" id="">
+      <input type="text" name="subject" id=""
+      placeholder="Enter subject" required minlength="6">
       <br><br>
+      <!-- Phone number format -123-456-789- -->
+       <label for="Phone number ">your phone number </label>
+       <br>
+       <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}" placeholder="9846425783">
+       <br><br>
 
       <!-- Messeage field -->
 
 
        <label for="Messeage">Messeage</label>
        <br>
-       <textarea name="" id="" cols="30" rows="10"></textarea>
+       <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here ....."
+       required minlength="10"></textarea>
        <br><br>
 
        <!-- submit button -->
